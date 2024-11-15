@@ -1,0 +1,54 @@
+.top-section {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.top-section img {
+  width: 300px; 
+  height: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: row; 
+  min-height: 100vh; 
+}
+
+.sidenav {
+  width: 200px;
+  background-color: #e9ecef;
+  padding: 50px;
+  border: 1px solid black;
+  flex-shrink: 0;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 50px;
+  border: 1px solid black;
+}
+
+.welcome {
+  padding: 25%;
+}
+
+.breadcrumb {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb > span {
+  margin-right: 5px;
+}
