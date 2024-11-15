@@ -1,0 +1,61 @@
+package com.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Customer {
+	
+	@Id @Column(unique = true)
+	private int customerId;
+	private String customerName;
+	private String emailId;
+	private String Gender;
+	private String department;
+	
+	public Customer() {
+		super();
+	}
+	
+	public Customer(int customerId, String customerName, String emailId, String gender, String department) {
+		super();
+		this.customerId = customerId;
+		this.customerName = customerName;
+		this.emailId = emailId;
+		Gender = gender;
+		this.department = department;
+	}
+	
+	public int getCustomerId() {
+		return customerId;
+	}
+	public void setCustometId(int customerId) {
+		this.customerId = customerId;
+	}
+	public String getCustomerName() {
+		return customerName;
+	}
+	public void setCustomerName(String customerName) {
+		this.customerName = customerName;
+	}
+	public String getEmailId() {
+		return emailId;
+	}
+	public void setEmailId(String emailId) {
+		this.emailId = emailId;
+	}
+	public String getGender() {
+		return Gender;
+	}
+	public void setGender(String gender) {
+		Gender = gender;
+	}
+	public String getDepartment() {
+		return department;
+	}
+	public void setDepartment(String department) {
+		this.department = department;
+	}
+
+}
